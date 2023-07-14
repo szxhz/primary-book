@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>六五毕业纪念</title>
+		<meta charset="UTF-8">
+		<style>
+.cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      opacity: 0;
+    }
+.img1 {
+	max-width:3.07px;
+	max-height:2.25px;
+     }	
+	</style>
+	</head>
+	<body style="background-color: #F5F5DC">
+		<hr color="AAAAFF">
+		<div class="cover">
+  			<div class="cover-content">
+    			<img src="https://blog.sztiger.top/szxhz.github.io-source/img/20230713002.jpg" alt="封面图片">
+    			<div class="text-overlay">
+      				<h1>时光信马由缰，未来终究由你来掌舵.</h1>
+		  		<script>
+    					const textOverlay = document.querySelector(".text-overlay");
+    					const text = "“那个夏天的蝉鸣比哪一年都聒噪，教室窗边枝桠疯长，无奈挡不住烈阳。能做的仅此而已...”";
+    				let index = 0;
+
+    				function typeWriter() {
+      			if (index < text.length) {
+        		textOverlay.innerHTML += text.charAt(index);
+        		index++;
+        		setTimeout(typeWriter, 100);
+      			}
+    			}
+
+    			setTimeout(() => {
+      			textOverlay.style.opacity = 1;
+      			typeWriter();
+    			}, 1000);
+  		</script>
+		</div>
+	  	</div>
+		</div>
+
+		<br>
+		<hr color="AAAAFF">
+
+		<div style="text-align: center; ">
+			<br>
+			<h4><font color="grey">任何事物都有始有终，成长谁也拦不住，就如岁月增长“总把新桃换旧符”，未来是美好的，昔日的光阴是难忘的，愿你们砥砺前行，持续前进！</font></h4>
+			<p>端起咖啡，再看一遍！</p>
+		</div>
+		</body>
+</html>
