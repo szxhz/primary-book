@@ -1,6 +1,7 @@
 const subtitle = document.querySelector(".subtitle");
 const buttons = document.querySelector(".buttons");
 const text = "“那个夏天的蝉鸣比哪一年都聒噪，教室窗边枝桠疯长，无奈挡不住烈阳......”";
+// 自定义副标题
 let index = 0;
 
 function typeWriter() {
