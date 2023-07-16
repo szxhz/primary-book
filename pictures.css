@@ -1,0 +1,84 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #87CEEB, #F0F8FF);
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fade-in 0.5s;
+    }
+
+    .navbar .navbar-item {
+      color: #333;
+      font-weight: bold;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li:not(:first-child) {
+      margin-left: 70px; /* 调整导航项之间的间距 */
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .section {
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      margin: 40px;
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-item {
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      font-size: 18px;
+      margin-top: 20px;
+    }
